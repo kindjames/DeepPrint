@@ -46,7 +46,7 @@ namespace DeepPrint
                 {
                     if (stopwatch.Elapsed < TimeSpan.FromSeconds(Settings.LockedDuration))
                     {
-                        Console.WriteLine($"Skipping => {e.Name} (locked)");
+                        Console.WriteLine($"Skipping => {e.Name} (too soon)");
                     }
                     else
                     {
